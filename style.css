@@ -291,14 +291,36 @@ footer {
 }
 
 #send-email {
-  margin: 2em 0.8em 1em;
-  padding: 1.6em 3em;
+  margin-top: 2em;
+  padding: 1.6em 1em;
   border: none;
+  width: 190px;
   border-radius: 5px;
   background-color: rgba(199, 199, 199, 1);
 }
 
-#send-email::placeholder {
+#number {
+  padding: 1.6em 1em;
+  border: none;
+  width: 190px;
+  border-radius: 5px;
+  background-color: rgba(199, 199, 199, 1);
+}
+
+#email {
+  margin: 0.6em auto;
+  padding: 1.6em 1em;
+  width: 385px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(199, 199, 199, 1);
+  font-size: 1rem;
+  font-family: "Poppins";
+}
+
+#send-email,
+#number,
+#email::placeholder {
   font-size: 1rem;
 }
 
@@ -306,8 +328,8 @@ footer {
   display: block;
   margin: 0 auto 0.8em;
   padding: 1em 1em;
-  height: 100px;
-  width: 243px;
+  height: 200px;
+  width: 385px;
   border: none;
   border-radius: 5px;
   font-size: 1rem;
@@ -324,6 +346,7 @@ footer {
   border-radius: 5px;
   background-color: rgba(252, 235, 53, 1);
   color: black;
+  width: 385px;
   cursor: pointer;
 }
 
@@ -506,22 +529,34 @@ footer {
   }
 
   #send-email {
-    margin: 2em auto 0;
-    padding: 1.8em;
-    width: 400px;
+    margin: 2em 0.3em 0;
+    padding: 1.8em 1em;
+    width: 243px;
+  }
+
+  #number {
+    margin: 2em 0.3em 0;
+    padding: 1.8em 1em;
+    width: 243px;
+  }
+
+  #email {
+    margin: 0.6em auto;
+    padding: 1.6em 1em;
+    width: 500px;
   }
 
   #message {
-    margin: 1em auto 1em;
+    margin: 0.5em auto 1em;
     padding: 0.5em 0.6em;
-    width: 400px;
-    height: 150px;
+    width: 500px;
+    height: 200px;
   }
 
   #submit {
     font-size: 1rem;
     font-weight: 600;
-    width: 400px;
+    width: 500px;
     padding: 1.2em 5.5em;
     margin-bottom: 0;
   }
@@ -565,12 +600,13 @@ footer {
     }
   }
 
-  .footer-infor {
-    flex-direction: row;
-  }
-
   .footer-address {
     padding: 2em auto;
+  }
+
+  .name-number {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -668,6 +704,10 @@ footer {
   footer {
     padding: 0 5em;
     width: 100%;
+  }
+
+  .footer-infor {
+    flex-direction: row;
   }
 
   #send-email {
@@ -843,8 +883,13 @@ footer {
   }
 
   #send-email {
-    padding: 1.5em 1em;
-    font-size: 1rem;
+    margin: 2em 0.3em 0;
+    padding: 1.8em 1em;
+    width: 247px;
+  }
+
+  #submit {
+    margin-left: 1em;
   }
 
   #submit:hover {
